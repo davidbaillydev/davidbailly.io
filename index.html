@@ -15,18 +15,13 @@
 
         <!-- Navbar -->
 
-        <nav>        
-            <div class="navbar-wrapper">
-                <div class="container">
+        <nav>
                 
-                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
-                    
+            <div class="navbar-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                <div class="container">
                     <div class="nav-wrapper">
-                        
-                            <a href="#"  class="brand-logo">DAVID BAILLY</a>
-                      
-                       
-
+                        <a href="#"  class="brand-logo">DAVID BAILLY</a>
                         <ul class="right hide-on-med-and-down" id="navList">
                             <li><a href="#landing"><i class="material-icons">home</i></a></li>
                             <li><a href="#intro">About Me</a></li>
@@ -36,30 +31,29 @@
                             <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark</a></li>
                         </ul>
                     </div>
-                
-                    <ul id="slide-out" class="sidenav">
-                        <li><div class="user-view">
-                          <div class="background">
-                            <img src="image/logo/git.png">
-                          </div>
-                          <a href="#user"><img class="circle" src="image/dav.png"></a>
-                          <a href="#name"><span class="white-text name">David Bailly</span></a>
-                          <a href="#email"><span class="white-text email">david.bailly8@gmail.com</span></a>
-                        </div></li>
-                        <li><a href="#landing"><i class="material-icons">home</i></a></li>
-                        <li><a href="#intro">About Me</a></li>
-                        <li><a href="#work">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><div class="divider"></div></li>
-                        <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark | Mode</a></li>
-                      </ul>
                 </div>
-            </div>        
+            </div>
+        
         </nav>
         
 
 
-       
+        <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="image/head.png">
+              </div>
+              <a href="#user"><img class="circle" src="image/dav.png"></a>
+              <a href="#name"><span class="white-text name">David Bailly</span></a>
+              <a href="#email"><span class="white-text email">david.bailly8@gmail.com</span></a>
+            </div></li>
+            <li><a href="#landing"><i class="material-icons">home</i></a></li>
+            <li><a href="#intro">About Me</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark | Mode</a></li>
+          </ul>
           
         
 
