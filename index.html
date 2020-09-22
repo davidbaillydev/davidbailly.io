@@ -15,13 +15,18 @@
 
         <!-- Navbar -->
 
-        <nav>
-                
+        <nav>        
             <div class="navbar-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <div class="container">
+                
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                    
                     <div class="nav-wrapper">
-                        <a href="#"  class="brand-logo">DAVID BAILLY</a>
+                        
+                            <a href="#"  class="brand-logo">DAVID BAILLY</a>
+                      
+                       
+
                         <ul class="right hide-on-med-and-down" id="navList">
                             <li><a href="#landing"><i class="material-icons">home</i></a></li>
                             <li><a href="#intro">About Me</a></li>
@@ -31,196 +36,209 @@
                             <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark</a></li>
                         </ul>
                     </div>
+                
+                    <ul id="slide-out" class="sidenav">
+                        <li><div class="user-view">
+                          <div class="background">
+                            <img src="image/logo/git.png">
+                          </div>
+                          <a href="#user"><img class="circle" src="image/dav.png"></a>
+                          <a href="#name"><span class="white-text name">David Bailly</span></a>
+                          <a href="#email"><span class="white-text email">david.bailly8@gmail.com</span></a>
+                        </div></li>
+                        <li><a href="#landing"><i class="material-icons">home</i></a></li>
+                        <li><a href="#intro">About Me</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark | Mode</a></li>
+                      </ul>
                 </div>
-            </div>
-           
+            </div>        
         </nav>
         
 
 
-        <ul id="slide-out" class="sidenav">
-            <li><div class="user-view">
-              <div class="background">
-                <img src="image/head.png">
-              </div>
-              <a href="#user"><img class="circle" src="image/dav.png"></a>
-              <a href="#name"><span class="white-text name">David Bailly</span></a>
-              <a href="#email"><span class="white-text email">david.bailly8@gmail.com</span></a>
-            </div></li>
-            <li><a href="#landing"><i class="material-icons">home</i></a></li>
-            <li><a href="#intro">About Me</a></li>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><div class="divider"></div></li>
-            <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark | Mode</a></li>
-          </ul>
+       
           
         
 
 
         <!-- Landing Screen -->
-        <div class="section" id="landing">
-            <!-- <h5 id="mainText" class="center"></h5> -->
-            <h1 id="mainText" style="color: white;"  class="center tracking-in-contract">
+        <div class="section no-pad-bot" id="landing">
+            <div class="container">
+              <br><br>
+            
+            <h1 id="mainText"  class=" header center tracking-in-contract  white-text">
                 DAVID <b>BAILLY</b>
             </h1>
-            <h4 class="center white-text">Developpeur Front-End</h4>              
-    </div>
+              <div class="row center">
+                <h5 class="header col s12 light white-text">Developpeur Front-End</h5>
+              </div>            
+              <br><br>       
+            </div>
+          </div>
+        
+    
 
         <!-- Intro and service -->
-
-        <div id="intro" class="section">
-            <div class="container">
-                <div class="row">
-                    <div  class="col s12">
-                        <h2 class="center header"> "Pour réaliser une chose vraiment extaordinare commencer
-                            par la rêver"</h2>
-                            <h5 class="center header"><i> - "Walt Disney"</i></h5>
+        <div class="container">
+                <div class="section center">
+                    <div class="row">
+                        <div  class="col s12 m12">
+                            <h2> "Pour réaliser une chose vraiment extaordinare commencer
+                                par la rêver"</h2>
+                                <span><i> - Walt Disney</i></span>
+                                <br></br>
+                        </div>
                     </div>
                 </div>
-                <div class="row center">
-                    <div class="col s12 m12 l3">
-                        <img class="responsive-img" src="image/dav.png">
-                    </div>
-                    <dic class="col s12 m12 offset-l1 l8 ">
-                        <h5 class="center"><b>ABOUT ME</b></h5>
-                        <p>
-                            Je suis David actuellement Développeur Front-End et comme beaucoup de personnes de ma génération, je suis passionné de nouvelles technologies et j’ai eu ma petite période Geek.
-                            Aujourd'hui je me considère comme un chanceux car j'aime le travail que je fais, qui est de faite une passion donc je ne m’ennuie quasiment jamais. 
-                            car il y'a toujours quelque chose à apprendre dans mon monde.
-                            
-                            
-                            <br />
-                            <i>" Mon objectif, est de devenir un developpeur full-stack,en multipliant les auto formation et les 
-                                projets"</i>
-                           
-                        </p>
-                            <!-- <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"> -->
             
-                            <p> <b>Consultez mon Cv </b></p>
-                             <a class="btn" href="cv/bailly.pdf">En ligne</a>
-                    </div>
+            
 
-                    
+                <div class="section center">
+                    <div class="row">
+                        <div class="col s12 m8 l3">
+                            <img class=" circle responsive-img" src="image/dav.png">
+                        </div>
+                        <dic class="col s12 m4 offset-l1 l8 ">
+                            <h5><b>ABOUT ME</b></h5>
+                            <p>
+                                Je suis David actuellement Développeur Front-End et comme beaucoup de personnes de ma génération, je suis passionné de nouvelles technologies et j’ai eu ma petite période Geek.
+                                Aujourd'hui je me considère comme un chanceux car j'aime le travail que je fais, qui est de faite une passion donc je ne m’ennuie quasiment jamais. 
+                                car il y'a toujours quelque chose à apprendre dans mon monde.
+                                <br />
+                                <i>" Mon objectif, est de devenir un developpeur full-stack,en multipliant les auto formation et les 
+                                    projets"</i>
+                            
+                            </p>
+                               
+                                <p> <b>Consultez mon Cv </b></p>
+                                <a class="btn" href="cv/bailly.pdf">En ligne</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+<!--Parallax-->
+<div  id="p1" class="parallax-container">
+        <div class="section center"> 
+            <div class="parallax"><img src="image/parala.png"></div>
+            <div class="row">
+                <div class="col s12 m12 white-text">
+                    <h1><b>QUOTE</b></h1>
+                        <h4>"
+                            La logique vous meneras d'un point A à un point B  <br />
+                            L'imagination vous enmeneras où vous voulez."
+                        </h4>
+                    <span><i> - Albert Einstein</i></span>
                 </div>
             </div>
-        </div>
-<!--Parallax-->
-<div id="p1" class="parallax-container">
-    <div  class="parallax">
-        <img src="image/parala.png">
-        
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col s12 center white-text">
-                <h1><b>QUOTE</b></h1>
-               
-                    <h4 >"
-                        La logique vous meneras d'un point A à un point B  <br />
-                        L'imagination vous enmeneras où vous voulez."
-                    </h4>
-                
-        
-                     <h5 class="center header"><i> - "Albert Einstein"</i></h5>
-            </div>
-        </div>
-    </div>
-        
-</div>
+        </div>  
+  </div>
+      
 
          <!--Work-->
-         <div class="section" style="background-color: #141414;" id="work">
-            <div class="container">
-                <h3 class="header text_b center white-text">My Projects </h3>
-                <div class="row ">
-                    <div class="col s12 m12 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="image/project/enkess.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator ">Site EnkessRecords <i class="mdi-navigation-more-vert right"></i></span>
-                                <h6><a  href="#">Enkess Records.com</a></h6>
-                            </div>
-                            <div class="card-reveal ">
-                                <span class="card-title">Enkess Records <i class="mdi-navigation-close right"></i></span>
-                                <p>construction du site de label musical Enkess Records</p>
-								
-								<ul class="valign-wrapper">
-                				<li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
-                				<li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
-               					<li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
-                				</ul>
-								
-                            </div>
-                        </div>
-                    </div>  
-                    
-                    <div class="col s12 m12 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="image/project/lcdigitale.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator ">Site lcdigitale <i class="mdi-navigation-more-vert right"></i></span>
-                                <h6><a  href="#">lcdigitale.com</a></h6>
-                            </div>
-                            <div class="card-reveal ">
-                                <span class="card-title">Site lcdigitale <i class="mdi-navigation-close right"></i></span>
-                                <p>Création site d'agence digitale</p>
-								
-								<ul class="valign-wrapper">
-                				<li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
-                				<li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
-               					<li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
-                				</ul>
-								
-                            </div>
-                        </div>
+          <div class="container" >
+        <div class="section" id="" >
+    
+          <!--   Icon Section   -->
+          <h3 class="header text_b center">My Projects </h3>
+          <div class="row">
+            <div class="col s12 m4">
+              
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="image/project/enkess.png">
                     </div>
-                    <div class="col s12 m12 l4">
-                        <div class="card ">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="image/project/ydevents.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator ">Site joe Barber <i class="mdi-navigation-more-vert right"></i></span>
-                                <h6><a  href="#">joebarber.com</a></h6>
-                            </div>
-                            <div class="card-reveal ">
-                                <span class="card-title"> Création site joe Barber <i class="mdi-navigation-close right"></i></span>
-                                <p>Céation site web de coiffure joe Barber</p>
-								
-								<ul class="valign-wrapper">
-                				<li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
-                				<li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
-                                <li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
-                                
-                				</ul>
-								
-                            </div>
-                        </div>
+                    <div class="card-content">
+                        <span class="card-title activator ">Site EnkessRecords <i class="mdi-navigation-more-vert right"></i></span>
+                        <h6><a  href="#">Enkess Records.com</a></h6>
                     </div>
-                    
+                    <div class="card-reveal ">
+                        <span class="card-title">Enkess Records <i class="mdi-navigation-close right"></i></span>
+                        <p>construction du site de label musical Enkess Records</p>
+                        
+                        <ul class="valign-wrapper">
+                        <li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
+                        <li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
+                           <li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </div>
+    
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="image/project/lcdigitale.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator ">Site lcdigitale <i class="mdi-navigation-more-vert right"></i></span>
+                        <h6><a  href="#">lcdigitale.com</a></h6>
+                    </div>
+                    <div class="card-reveal ">
+                        <span class="card-title">Site lcdigitale <i class="mdi-navigation-close right"></i></span>
+                        <p>Création site d'agence digitale</p>
+                        
+                        <ul class="valign-wrapper">
+                        <li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
+                        <li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
+                           <li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
     
-        <!-- Skill Sets -->
+            <div class="col s12 m4">
+                <div class="card ">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="image/project/ydevents.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator ">Site joe Barber <i class="mdi-navigation-more-vert right"></i></span>
+                        <h6><a  href="#">joebarber.com</a></h6>
+                    </div>
+                    <div class="card-reveal ">
+                        <span class="card-title"> Création site joe Barber <i class="mdi-navigation-close right"></i></span>
+                        <p>Céation site web de coiffure joe Barber</p>
+                        
+                        <ul class="valign-wrapper">
+                        <li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
+                        <li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
+                        <li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
+                        
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+    
+        </div>
+        <br><br>
+    </div>
+    
 
-        <div class="section" style="background-color: #101010;" id="skillsets">
-            <div class="container">
+        <!-- Skill Sets -->
+        <div class="container">
+            <div class="section center">
                 <div class="row">
-                    <h1 class="center white-text">
+                    <h1>
                         #My Skills
                     </h1>
-                    <hr size="1" color="white">
-                    <h3 class="center white-text">
+                    <div class="divider"></div>
+                    <h4>
                         Front-End
-                    </h3>
+                    </h4>
                 </div>
-                <div class="row center">
+                <div class="row">
                     <div class="col s12 m12 l3">
                         <img class="responsive-img" src="image/home/ht.png">
                     </div>
@@ -234,10 +252,10 @@
                         <img class="responsive-img" src="image/home/j.png">
                     </div>
                 </div>
-                <hr size="1" color="white" width="50%">
-                <h3 class="center white-text">
+                <hr size="1"  width="50%">
+                <h4 class="">
                     Back-End
-                </h3>
+                </h4>
                 <div class="row center">
                     <div class="col s12 m12 l3">
                         <img class="responsive-img" src="image/home/symf.png">
@@ -255,13 +273,11 @@
                 <div class="center-align">
                     <a class="waves-effect waves-light btn">plus de Ressources</a>
                 </div>
-                
+                <div class="divider"></div>
             </div>
-            
         </div>
+
         
-
-
 
        <!-- Add FIXED ACTION BUTTON -->
 
