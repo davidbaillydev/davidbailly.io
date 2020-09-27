@@ -96,13 +96,25 @@ nav {
   z-index: -1;
 }
 
-@media screen and (min-width: 200px) and (max-width: 1630px) {
+@media (min-width: 200px) {
+  #landing {
+    background-image: url("image/scree.png");
+  }
+}
+
+@media (min-width: 576px) {
+  #landing {
+    background-image: url("image/scree.png");
+  }
+}
+
+@media (min-width: 768px) {
   #landing {
     background-image: url("image/head.png");
   }
 }
 
-@media screen and (min-height: 400px) and (max-height: 1630px) {
+@media (min-width: 992px) {
   #landing {
     background-image: url("image/head.png");
   }
