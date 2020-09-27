@@ -90,15 +90,39 @@ nav {
 #landing {
   height: 100vh;
   background-image: url("image/head.png");
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   background-attachment: fixed;
   z-index: -1;
 }
 
+@media screen and (min-width: 480px) {
+  #landing {
+    background-image: url("image/head.png");
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #landing {
+    background-image: url("image/head.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #landing {
+    background-image: url("image/head.png");
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #landing {
+    background-image: url("image/head.png");
+  }
+}
+
 #mainText {
-  margin-top: 25vh;
+  margin-top: 30vh;
 }
 
 #intro {

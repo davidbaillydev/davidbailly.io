@@ -8,6 +8,8 @@ body {
 		color: #fff;
 		nav {
 			background-color: #26A69A;
+			
+
 		}
 		.card {
 			background-color: rgba(255,255,255,0.2);
@@ -82,16 +84,56 @@ body {
 
   nav {
 	background-color: black;
+	// height: 15vh;
+	
 }
 
+// body {
+// 	background-color:white;
+// 	color: black;
+// 	// Styles for 200px (or less) height
+// 	@media screen and ( max-height: 500px ){
+// 	  background-color:black;
+// 	  color: white;
+// 	}
+//   }
+//   nav {
+// 	background-color:green;
+// 	a {color:yellow!important;}
+// 	// Styles for 200px (or less) height
+// 	@media screen and ( max-height: 500px ){
+// 	  background-color:#454545;
+// 	  a {color:red!important;}
+// 	}
+//   }
+  
+  
+
 #landing{
+	@media screen and ( min-width: 480px) {
+		background-image: url('image/head.png');
+	}
+	@media screen and (min-width: 576px) {
+			background-image: url('image/head.png');
+		}
+
+		@media screen and ( min-width: 768px) {
+			background-image: url('image/head.png');
+		}
+		@media screen and (min-width: 992px) {
+				background-image: url('image/head.png');
+			}
+			
+		
+
 	height: 100vh;
 	background-image: url('image/head.png');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat:no-repeat ;
+    background-position: top center;
+    background-size: cover;
 	background-attachment: fixed;
 	z-index: -1;
+	
 }
 
 #mainText{
