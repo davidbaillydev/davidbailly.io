@@ -8,8 +8,9 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Main stylesheet -->
-        <link rel="stylesheet" href="">
+        
         <link rel="stylesheet" href="dark.css">
+
     </head>
     <body>
 
@@ -23,11 +24,11 @@
                     <div class="nav-wrapper">
                         <a href="#"  class="brand-logo">DAVID BAILLY</a>
                         <ul class="right hide-on-med-and-down" id="navList">
-                            <li><a href="#landing"><i class="material-icons">home</i></a></li>
+                            <li><a href="./index.html"><i class="material-icons">home</i></a></li>
                             <li><a href="#intro">About Me</a></li>
                             <li><a href="#work">Projects</a></li>
-                            <li><a href="#work">Ressources</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="rsource.html">Ressources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                             <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark</a></li>
                         </ul>
                     </div>
@@ -55,29 +56,56 @@
             <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark | Mode</a></li>
           </ul>
           
-        
-
-
-        <!-- Landing Screen -->
-        <div class="section no-pad-bot" id="landing">
+   
+ <!-- Landing Screen -->
+        <div class="section center" id="landing">
             <div class="container">
                 <div  class="col s12 m12">
+                    
               <br><br>
-            
-            <h1 id="mainText"  class=" header center tracking-in-contract  white-text">
+
+            <h1 id="mainText"  class=" header center tracking-in-contract ">
                 DAVID <b>BAILLY</b>
             </h1>
               <div class="row center">
-                <h5 class="header col s12 light white-text">Developpeur Front-End</h5>
-              </div>            
+                <!-- <h5 class="item-1 col s12 center ">Hello, je suis Developpeur web junior </h5>
+                <h5 class="item-2 col s12 center ">Je suis à la recherche d'une #Teams</h5>
+                 -->
+                 <section class="">
+                    <h3 class="cd-headline letters type">
+                        <span>Je suis Développeur Web</span> 
+                        <span class="cd-words-wrapper waiting">
+                            <b class="is-visible">Front-End</b>
+                            <b>Back-End</b>
+                            <b>à la recherche d'une nouvelle mission</b>
+                        </span>
+                    </h3>
+                </section> 
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+       
+            </div>            
               <br><br>   
               </div>
             </div>
           </div>
+          
+    
         
     
 
         <!-- Intro and service -->
+        <!-- <canvas id="hero-canvas" width="1230" height="992"></canvas> -->
         <div class="container">
                 <div class="section center">
                     <div class="row">
@@ -90,14 +118,16 @@
                     </div>
                 </div>
             
-            
+                
+                
+                
 
                 <div class="section center">
                     <div class="row">
-                        <div class="col s12 m8 l3">
-                            <img class=" circle responsive-img" src="image/dav.png">
+                        <div class="col s12 m5 l5">
+                            <img class=" circle responsive-img" src="image/dav1.png">
                         </div>
-                        <dic class="col s12 m4 offset-l1 l8 ">
+                        <dic class="col s12 m6 l7">
                             <h5><b>ABOUT ME</b></h5>
                             <p>
                                 Je suis David actuellement Développeur Front-End et comme beaucoup de personnes de ma génération, je suis passionné de nouvelles technologies et j’ai eu ma petite période Geek.
@@ -110,7 +140,7 @@
                             </p>
                                
                                 <p> <b>Consultez mon Cv </b></p>
-                                <a class="btn" href="cv/baillycv.pdf">En ligne</a>
+                                <a class="btn" href="cv/cvbailly.pdf">En ligne</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +178,7 @@
               
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="image/project/enkess.png">
+                        <img class="activator" src="image/project/enkess.png" height="280px">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator ">Site EnkessRecords <i class="mdi-navigation-more-vert right"></i></span>
@@ -172,7 +202,7 @@
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="image/project/lcdigitale.png">
+                        <img class="activator" src="image/project/lcdigitale.png" height="280px">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator ">Site lcdigitale <i class="mdi-navigation-more-vert right"></i></span>
@@ -195,7 +225,7 @@
             <div class="col s12 m4">
                 <div class="card ">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="image/project/ydevents.png">
+                        <img class="activator" src="image/project/joe.png" height="280px">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator ">Site joe Barber <i class="mdi-navigation-more-vert right"></i></span>
