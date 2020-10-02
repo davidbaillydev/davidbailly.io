@@ -245,6 +245,20 @@ xloading-bar
 	top: 0;
   }
    
+  @media screen and (max-width: 380px) {
+    header.masthead {
+        background: transparent url(/image/hero.png) no-repeat;
+    }
+}
+@media screen and (min-width: 381px) {
+    header.masthead {
+        background: transparent url(/image/hero.png) no-repeat;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 	background-attachment: fixed;
 	z-index: -1;
 	background-image: url('image/hero.png'); 
