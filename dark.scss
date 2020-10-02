@@ -127,7 +127,15 @@ body {
 	.cd-title {
 	  line-height: 250px;
 	}
-  }
+  
+	background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+
+    height:100vh;
+}
   @media only screen and (min-width: 1170px) {
 	.cd-title {
 	  height: 200px;
@@ -136,7 +144,14 @@ body {
 	.cd-title h1 {
 	  font-size: 3rem;
 	}
-  }
+	background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+
+    height:100vh;
+}
 
 	cd-intro {
 		width: 90%;
@@ -151,12 +166,26 @@ body {
 		.cd-intro {
 		  margin: 5em auto;
 		}
-	  }
+		background-attachment: fixed;
+		z-index: -1;
+		background-image: url('image/hero.png'); 
+		background-position: top center;
+		background-size: cover; 
+	
+		height:100vh;
+	}
 	  @media only screen and (min-width: 1170px) {
 		.cd-intro {
 		  margin: 6em auto;
 		}
-	  }
+		background-attachment: fixed;
+		z-index: -1;
+		background-image: url('image/hero.png'); 
+		background-position: top center;
+		background-size: cover; 
+	
+		height:100vh;
+	}
 	  
 	  .cd-headline {
 		font-size: 3rem;
@@ -167,12 +196,26 @@ body {
 		  font-size: 4.4rem;
 		  font-weight: 300;
 		}
-	  }
+		background-attachment: fixed;
+		z-index: -1;
+		background-image: url('image/hero.png'); 
+		background-position: top center;
+		background-size: cover; 
+	
+		height:100vh;
+	}
 	  @media only screen and (min-width: 1170px) {
 		.cd-headline {
 		  font-size: 6rem;
 		}
-	  }
+		background-attachment: fixed;
+		z-index: -1;
+		background-image: url('image/hero.png'); 
+		background-position: top center;
+		background-size: cover; 
+	
+		height:100vh;
+	}
 	  
 	  .cd-words-wrapper {
 		display: inline-block;
