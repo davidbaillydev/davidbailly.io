@@ -1,5 +1,6 @@
 $transition-effects: color 1s ease, background-color 1s ease;
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@media (max-width: 1630px) {
 body {
 	background-color: #eee;
 	transition: $transition-effects;
@@ -249,8 +250,8 @@ xloading-bar
 	background-image: url('image/hero.png'); 
 	background-position: top center;
 	background-size: cover; 
-
-    height:100vh;
+	height:100vh;
+	width: auto;
 
 
 	.circles{
@@ -461,3 +462,4 @@ xloading-bar
 }
 
 
+}
