@@ -1,192 +1,459 @@
-// Grid
-@mixin grid($column) {
-    width:(100% / 12) * $column;
-    margin:0 auto;
+#landing{
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+
 }
 
-// Transition Ease
-@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
-    -webkit-transition: $attr $time $curve;
-    -moz-transition: $attr $time $curve;
-    -o-transition: $attr $time $curve;
-    -ms-transition: $attr $time $curve;
-    transition: $attr $time $curve;
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+
 }
 
-//-- Lato --//
-@mixin lato-1 {font-family: 'Lato', sans-serif; font-weight:100;}
-@mixin lato-1-i {@include lato-1; font-style:italic;}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
 
-@mixin lato-3 {font-family: 'Lato', sans-serif; font-weight:300;}
-@mixin lato-3-i {@include lato-3; font-style:italic;}
-
-@mixin lato-4 {font-family: 'Lato', sans-serif; font-weight:400;}
-@mixin lato-4-i {@include lato-4; font-style:italic;}
-
-@mixin lato-7 {font-family: 'Lato', sans-serif; font-weight:700;}
-@mixin lato-7-i {@include lato-7; font-style:italic;}
-
-@mixin lato-9 {font-family: 'Lato', sans-serif; font-weight:900;}
-@mixin lato-9-i {@include lato-9; font-style:italic;}
-
-
-// Colors
-$blue:#313A3D;
-$orange:#FD9638;
-$dark-orange:darken($orange, 20%);
-$grey:#B6B6B6;
-$light-grey:lighten($grey, 15%);
-
-$background:#efefef;
-$field-color:#E8E9EA;
-
-
-
-
-
-body {
-    background:$background;
-    font-size:62.5%;
-    @include lato-3;
-    color:$grey;
-
-section {
- background:white;
-  margin:60px auto 120px;
-  border-top:15px solid $blue;
-  text-align:center;
-      padding:50px 0 110px;
-  width:80%;
-  max-width:1100px;
-  
-  h1 {
-    margin-bottom:40px;
-    font-size:4em;
-    text-transform:uppercase;
-    @include lato-1;
-  }
-}
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
 }
 
-// Form
-form {
-        @include grid(7);
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-        .field {
-              width:100%;
-              position:relative;
-              margin-bottom:15px;
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-              $hover-label-width:18%;
-              $placeholder-bumper:1.5%;
-              $label-padding:18px;
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 
-              // Label
-              label {
-                    text-transform: uppercase;
-                    position:absolute;
-                    top:0;
-                    left:0;
-                    background:$blue;
-                    width:100%;
-                    padding:($label-padding + 0px) 0;
-                    font-size: 1.45em;
-                    letter-spacing: 0.075em;
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                    @include ease(333ms);
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                    // Checkmark
-                    + span {
-                          font-family: 'SSStandard';
-                          opacity: 0;
-                          color:white;
-                          display: block;
-                          position:absolute;
-                          top: 12px;
-                          left: 7%;
-                          font-size: 2.5em;
-                          text-shadow:1px 2px 0 $dark-orange;
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                          @include ease(333ms);
-                    }
-              }
+/* ----------- iPad Pro 10.5" ----------- */
 
-              // Fields
-              input[type="text"],
-              textarea {
-                    border:none;
-                    background:$field-color;
-                    width:100% - $hover-label-width - $placeholder-bumper;
-                    margin:0;
-                    padding:$label-padding 0;
-                    padding-left:$hover-label-width + $placeholder-bumper;
-                    color:$blue;
-                    font-size: 1.4em;
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                    &#msg {
-                          height: 18px;
-                          resize: none;
-                          @include ease(333ms);
-                    }
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                    // Focus and JS Toggle Class
-                    &:focus,
-                    &.focused {
-                          outline:none;
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                          &#msg {
-                                padding-bottom:150px;
-                          }
+/* ----------- iPad Pro 12.9" ----------- */
 
-                          + label {
-                                width:$hover-label-width;
-                                background:$orange;
-                                color:$blue;
-                          }
-                    }
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-                    // JS Toggle Class
-                    &.focused {
-                          + label {
-                                color: $orange;
-                          }
-                    }
-              }
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
 
-              // Field Hover
-              &:hover {
-                    label {
-                          width:$hover-label-width;
-                          background:$blue;
-                          color:white;
-                    }
-              }
-        }
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
 
-        // Submit Button
-        input[type="submit"] {
-              background:$orange;
-              color:white;
-              -webkit-appearance: none;
-              border: none;
-              text-transform: uppercase;
-  position:relative;
-          padding: 13px 50px;
-          font-size: 1.4em;
-          letter-spacing: 0.1em;
-          @include lato-3;
-          @include ease;
-      
-              &:hover {
-                    background:$blue;
-                    color:$orange;
-              }
+}
 
-              &:focus {
-                    outline:none;
-                    background:$dark-orange;
-              }
-        }
-  }
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+      background-attachment: fixed;
+	z-index: -1;
+	background-image: url('image/hero.png'); 
+	background-position: top center;
+	background-size: cover; 
+	height:100vh;
+	width: auto;
+}
+
+}

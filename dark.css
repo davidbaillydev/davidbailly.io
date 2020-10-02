@@ -77,13 +77,6 @@
 xloading-bar 
 
 -------------------------------- */
-    background-attachment: fixed;
-    z-index: -1;
-    background-image: url("image/hero.png");
-    background-position: top center;
-    background-size: cover;
-    height: 100vh;
-    width: auto;
   }
   #landing *, #landing *::after, #landing *::before {
     -webkit-box-sizing: border-box;
@@ -224,25 +217,6 @@ xloading-bar
   #landing .cd-headline.loading-bar b.is-visible {
     opacity: 1;
     top: 0;
-  }
-}
-
-@media screen and (max-width: 1630px) and (max-width: 380px) {
-  #landing header.masthead {
-    background: transparent url(/image/hero.png) no-repeat;
-  }
-}
-
-@media screen and (max-width: 1630px) and (min-width: 381px) {
-  #landing header.masthead {
-    background: transparent url(/image/hero.png) no-repeat;
-  }
-}
-
-@media (max-width: 1630px) {
-  #landing img {
-    max-width: 100%;
-    height: auto;
   }
   #landing .circles {
     top: 0;
