@@ -71,9 +71,6 @@
   nav {
     background-color: black;
   }
-  .brand-logo {
-    padding-left: 80px !important;
-  }
   #landing {
     z-index: -1;
     background-position: center;
