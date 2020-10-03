@@ -80,12 +80,16 @@
     width: 100%;
     /* Extra small devices (phones, 600px and down) */
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    /* Medium devices (landscape tablets, 768px and up) */
     /* Portrait and Landscape */
     /* Large devices (laptops/desktops, 992px and up) */
     /* Extra large devices (large laptops and desktops, 1200px and up) */
+    /* ----------- Non-Retina Screens ----------- */
+    /* ----------- Retina Screens ----------- */
     /* Extra small devices (phones, 600px and down) */
     /* Small devices (portrait tablets and large phones, 600px and up) */
+    /* Portrait and Landscape */
+    /* ----------- Non-Retina Screens ----------- */
+    /* ----------- Retina Screens ----------- */
     /* -------------------------------- 
 
 xloading-bar 
@@ -126,6 +130,22 @@ xloading-bar
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 1200px) {
+  #landing {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1630px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #landing {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1630px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1630px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #landing {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
@@ -178,6 +198,26 @@ xloading-bar
 }
 
 @media only screen and (max-width: 1630px) and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #landing .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  #landing .cd-title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1630px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #landing .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  #landing .cd-title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1630px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1630px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #landing .cd-title {
     height: 200px;
     line-height: 300px;

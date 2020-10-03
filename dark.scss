@@ -123,11 +123,7 @@ body {
 	background-repeat: no-repeat;
   }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-//   @media only screen and (min-width: 768px) {
-// 	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png"); 
-// 	background-repeat: no-repeat;
-//   } 
+
 
   /* Portrait and Landscape */
 @media only screen 
@@ -151,6 +147,24 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	background-repeat: no-repeat;
   }
 
+  /* ----------- Non-Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");  
+	background-repeat: no-repeat;
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) { 
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");  
+	background-repeat: no-repeat;
+}
 	*, *::after, *::before {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -178,7 +192,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	  }	  
 
 	  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 600px) {
 	.cd-title {
 		height: 200px;
 		line-height: 300px;
@@ -199,6 +213,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	  }
   }
 
+  /* Portrait and Landscape */
   @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -211,15 +226,35 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		font-size: 3rem;
 	  }
 }
-// @media only screen and (min-width: 768px) {
-// 	.cd-title {
-// 		height: 200px;
-// 		line-height: 300px;
-// 	  }
-// 	  .cd-title h1 {
-// 		font-size: 3rem;
-// 	  }
-// }
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	.cd-title {
+		height: 200px;
+		line-height: 300px;
+	  }
+	  .cd-title h1 {
+		font-size: 3rem;
+	  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+	.cd-title {
+		height: 200px;
+		line-height: 300px;
+	  }
+	  .cd-title h1 {
+		font-size: 3rem;
+	  }
+}
 
   @media only screen and (min-width: 1170px) {
 	.cd-title {
@@ -277,7 +312,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		display: inline-block;
 		position: absolute;
 		word-wrap: break-word;
-		// white-space: nowrap;
 		left: 0;
 		top: 0;
 	  }
