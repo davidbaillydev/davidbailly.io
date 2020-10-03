@@ -85,6 +85,7 @@ xloading-bar
     z-index: -1;
     background-size: cover;
     height: 100vh;
+    background-repeat: no-repeat;
     background-size: contain;
     width: auto;
   }
