@@ -100,24 +100,28 @@ xloading-bar
 @media only screen and (max-width: 1630px) and (min-width: 600px) {
   #landing {
     background-image: url("image/hero.png");
+    background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 768px) {
   #landing {
     background-image: url("image/hero.png");
+    background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 992px) {
   #landing {
     background-image: url("image/hero.png");
+    background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 1200px) {
   #landing {
     background-image: url("image/hero.png");
+    background-repeat: no-repeat;
   }
 }
 
