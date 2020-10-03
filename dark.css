@@ -72,55 +72,63 @@
     background-color: black;
   }
   #landing {
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
     /* Extra small devices (phones, 600px and down) */
     /* Small devices (portrait tablets and large phones, 600px and up) */
     /* Medium devices (landscape tablets, 768px and up) */
     /* Large devices (laptops/desktops, 992px and up) */
     /* Extra large devices (large laptops and desktops, 1200px and up) */
+    /* Extra small devices (phones, 600px and down) */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
     /* -------------------------------- 
 
 xloading-bar 
 
 -------------------------------- */
-    z-index: -1;
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: auto;
   }
 }
 
 @media only screen and (max-width: 1630px) and (max-width: 600px) {
   #landing {
-    background-image: url("image/hero.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 600px) {
   #landing {
-    background-image: url("image/hero.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
     background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 768px) {
   #landing {
-    background-image: url("image/hero.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
     background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 992px) {
   #landing {
-    background-image: url("image/hero.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
     background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 1630px) and (min-width: 1200px) {
   #landing {
-    background-image: url("image/hero.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("image/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png");
     background-repeat: no-repeat;
   }
 }
@@ -146,6 +154,26 @@ xloading-bar
   #landing .cd-title h1 {
     font-size: 2.4rem;
     font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 1630px) and (max-width: 600px) {
+  #landing .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  #landing .cd-title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1630px) and (min-width: 600px) {
+  #landing .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  #landing .cd-title h1 {
+    font-size: 3rem;
   }
 }
 
