@@ -95,7 +95,34 @@ body {
 
   
 
+
+
 #landing{
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	background-image: url('image/hero.png'); 
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+	background-image: url('image/hero.png'); 
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+	background-image: url('image/hero.png'); 
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+	background-image: url('image/hero.png'); 
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+	background-image: url('image/hero.png'); 
+  }
 
 	*, *::after, *::before {
 		-webkit-box-sizing: border-box;
@@ -247,12 +274,13 @@ xloading-bar
    
 
 	// background-attachment: fixed;
-	// z-index: -1;
+	z-index: -1;
 	// background-image: url('image/hero.png'); 
 	// background-position: top center;
-	// background-size: cover; 
-	// height:100vh;
-	// width: auto;
+	background-size: cover; 
+	height:100vh;
+	background-size: contain;
+	width: auto;
 
 
 	.circles{

@@ -72,12 +72,55 @@
     background-color: black;
   }
   #landing {
+    /* Extra small devices (phones, 600px and down) */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* Large devices (laptops/desktops, 992px and up) */
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
     /* -------------------------------- 
 
 xloading-bar 
 
 -------------------------------- */
+    z-index: -1;
+    background-size: cover;
+    height: 100vh;
+    background-size: contain;
+    width: auto;
   }
+}
+
+@media only screen and (max-width: 1630px) and (max-width: 600px) {
+  #landing {
+    background-image: url("image/hero.png");
+  }
+}
+
+@media only screen and (max-width: 1630px) and (min-width: 600px) {
+  #landing {
+    background-image: url("image/hero.png");
+  }
+}
+
+@media only screen and (max-width: 1630px) and (min-width: 768px) {
+  #landing {
+    background-image: url("image/hero.png");
+  }
+}
+
+@media only screen and (max-width: 1630px) and (min-width: 992px) {
+  #landing {
+    background-image: url("image/hero.png");
+  }
+}
+
+@media only screen and (max-width: 1630px) and (min-width: 1200px) {
+  #landing {
+    background-image: url("image/hero.png");
+  }
+}
+
+@media (max-width: 1630px) {
   #landing *, #landing *::after, #landing *::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
