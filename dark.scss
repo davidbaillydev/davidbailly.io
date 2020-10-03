@@ -124,10 +124,20 @@ body {
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+//   @media only screen and (min-width: 768px) {
+// 	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png"); 
+// 	background-repeat: no-repeat;
+//   } 
+
+  /* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
 	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png"); 
 	background-repeat: no-repeat;
-  } 
+}
+
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
@@ -189,8 +199,10 @@ body {
 	  }
   }
 
-
-@media only screen and (min-width: 768px) {
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
 	.cd-title {
 		height: 200px;
 		line-height: 300px;
@@ -199,6 +211,15 @@ body {
 		font-size: 3rem;
 	  }
 }
+// @media only screen and (min-width: 768px) {
+// 	.cd-title {
+// 		height: 200px;
+// 		line-height: 300px;
+// 	  }
+// 	  .cd-title h1 {
+// 		font-size: 3rem;
+// 	  }
+// }
 
   @media only screen and (min-width: 1170px) {
 	.cd-title {
