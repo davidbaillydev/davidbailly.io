@@ -178,7 +178,11 @@ xloading-bar
 
 @media only screen and (max-width: 1630px) and (min-width: 768px) {
   #landing .cd-title {
-    line-height: 250px;
+    height: 200px;
+    line-height: 300px;
+  }
+  #landing .cd-title h1 {
+    font-size: 3rem;
   }
 }
 
