@@ -11,7 +11,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Main stylesheet -->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="hero.css">
         <link rel="stylesheet" href="dark.css">
 
     </head>
@@ -23,23 +23,27 @@
                 
             <div class="navbar-wrapper">
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="#"  class="brand-logo">DAVID BAILLY</a>
-                       
-                        <ul class="right hide-on-med-and-down" id="navList">
-                            <li><a href="./index.html"><i class="material-icons">home</i></a></li>
-                            <li><a href="#intro">About Me</a></li>
-                            <li><a href="#work">Projects</a></li>
-                            <li><a href="rsource.html">Ressources</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="col s1 center ">
+                        <a href="#"  class="brand-logo"> David Bailly</a>
+               
+                    </div>
+                <div class="container">   
+                    <div class="nav-wrapper"> 
+                            <div class="col s11 center ">
+                                <ul class="right hide-on-med-and-down" id="navList">
+                                    <li><a href="./index.html"><i class="material-icons">home</i></a></li>
+                                    <li><a href="#intro">About Me</a></li>
+                                    <li><a href="#work">Projects</a></li>
+                                    <li><a href="rsource.html">Ressources</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        
         </nav>
         
 
@@ -73,11 +77,11 @@
                         DAVID <b>BAILLY</b>
                     </h1>
                     <div class="cd-headline loading-bar">
-                        <h3>Je suis Développeur Web</h3> 
-                        <div class="cd-words-wrapper">
+                        <h3 class="white-text">Je suis Développeur Web</h3> 
+                        <div class="cd-words-wrapper white-text">
                             <b class="is-visible">Front-End</b>
                             <b>Back-End</b>
-                            <b>à la recherche d'une nouvelle mission</b>
+                            <b>À la recherche d'une nouvelle mission</b>
                         </div>
                     </div>
                 </section> 
@@ -92,11 +96,19 @@
                     <li></li>
                     <li></li>
                     <li></li>
-            </ul>
-       
-            </div>            
-              <br><br>   
-              </div>
+                </ul>
+                </div>
+                </div>            
+                <br><br>   
+    
+                <div class="fuse">
+                    <img src="/image/logo/fuse.png" alt="" height="200px" width="150">
+                </div>
+            
+            
+  
+            
+            </div>
             </div>
           </div>
           
@@ -107,6 +119,7 @@
         <!-- Intro and service -->
         <!-- <canvas id="hero-canvas" width="1230" height="992"></canvas> -->
         <div class="container">
+            
                 <div class="section center">
                     <div class="row">
                         <div  class="col s12 m12">
@@ -118,11 +131,10 @@
                     </div>
                 </div>
             
-                
-                
+               
                 
 
-                <div class="section center">
+                <div id="intro" class="section center">
                     <div class="row">
                         <div class="col s12 m5 l5">
                             <img class=" circle responsive-img" src="image/dav1.png">
@@ -168,25 +180,25 @@
       
 
          <!--Work-->
-          <div class="container" >
-        <div class="section" id="" >
+          <div class="container" id="work">
+        <div class="section" >
     
           <!--   Icon Section   -->
           <h3 class="header text_b center">My Projects </h3>
           <div class="row">
             <div class="col s12 m4">
               
-                <div class="card">
+                <div class="card medium">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="image/project/enkess.png" >
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator ">Site EnkessRecords <i class="mdi-navigation-more-vert right"></i></span>
+                        <span class="card-title activator ">EnkessRecords <i class="mdi-navigation-more-vert right"></i></span>
                         <h6><a  href="#">Enkess Records.com</a></h6>
                     </div>
                     <div class="card-reveal ">
                         <span class="card-title">Enkess Records <i class="mdi-navigation-close right"></i></span>
-                        <p>construction du site de label musical Enkess Records</p>
+                        <p>Construction du site de label musical Enkess Records ( en cour de production)</p>
                         
                         <ul class="valign-wrapper">
                         <li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
@@ -200,7 +212,7 @@
             </div>
     
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card medium">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="image/project/lcdigitale.png" >
                     </div>
@@ -210,12 +222,12 @@
                     </div>
                     <div class="card-reveal ">
                         <span class="card-title">Site lcdigitale <i class="mdi-navigation-close right"></i></span>
-                        <p>Création site d'agence digitale</p>
+                        <p>Création site freelance digitale</p>
                         
                         <ul class="valign-wrapper">
-                        <li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
-                        <li><img src="https://img.icons8.com/color/44/000000/bootstrap.png"/> </li>
-                           <li ><img src="https://img.icons8.com/officel/44/000000/php.png"/></li>
+                        <li ><img src="https://img.icons8.com/color/48/000000/wordpress.png"/></li>
+                      
+                         
                         </ul>
                         
                     </div>
@@ -223,7 +235,7 @@
             </div>
     
             <div class="col s12 m4">
-                <div class="card ">
+                <div class="card medium ">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="image/project/joe.png" >
                     </div>
@@ -233,7 +245,7 @@
                     </div>
                     <div class="card-reveal ">
                         <span class="card-title"> Création site joe Barber <i class="mdi-navigation-close right"></i></span>
-                        <p>Céation site web de coiffure joe Barber</p>
+                        <p>Céation site web de coiffure joe Barber ( en cour de production)</p>
                         
                         <ul class="valign-wrapper">
                         <li ><img src="https://img.icons8.com/color/44/000000/symfony.png"/></li>
@@ -296,9 +308,7 @@
                         <img class="responsive-img" src="image/home/bs.png">
                     </div>
                 </div>
-                <div class="center-align">
-                    <a class="waves-effect waves-light btn">plus de Ressources</a>
-                </div>
+               
                 <div class="divider"></div>
             </div>
         </div>
@@ -312,7 +322,7 @@
             <i class="fa fa-globe"></i>
         </a>
         <ul>
-            <li><a target="_blank" href="" class="btn-floating  blue darken-4"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://codepen.io/kalimbo365" class="btn-floating  blue darken-4"><i class="fa fa-codepen" ></i></a></a></li>
             <li><a target="_blank" href="" class="btn-floating cyan lighten-1"><i class="fa fa-twitter"></i></a></li>
             <li><a target ="_blank" href="https://github.com/kalimbo365" class="btn-floating grey darken-3"> <i class="fa fa-github"></i></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/davidbailly8" class="btn-floating blue-grey lighten-1"><i class="fa fa-linkedin"></i></a></li>
@@ -341,7 +351,7 @@
 
         <!-- partial -->
   <script  src="./script.js"></script>
-
+ 
  
     </body>
 </html>

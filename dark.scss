@@ -25,7 +25,10 @@ body {
 
 		.card {
 			background-color: black;
+			
 		}
+
+
 
 		.card-content {
 			background-color: black;
@@ -89,14 +92,17 @@ body {
 
   nav {
 	background-color: black;
-	// height: 15vh;
 	
+	/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
 }
 
-// .brand-logo {
-// 	padding-left: 80px !important;
-// 	position: center;
-// }
+
+}
 
 
 
@@ -126,6 +132,14 @@ body {
 	background-repeat: no-repeat;
   }
   
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero.png"); 
+	background-repeat: no-repeat;
+}
 
 
   /* Portrait and Landscape */
@@ -273,10 +287,12 @@ and (min-resolution: 192dpi) {
 		width: 90%;
 		max-width: 768px;
 		text-align: center;
+		
 	  }
 	  
 	  .cd-intro {
 		margin: 4em auto;
+		
 	  }
 	  @media only screen and (min-width: 768px) {
 		.cd-intro {
@@ -473,20 +489,43 @@ xloading-bar
 		animation-duration: 11s;
 	}
 
+	.fuse {
+	
+		// width: 50px;
+		// height:120px;
+		position:absolute;
+		animation: move 10s infinite linear;
+		animation-delay: 3s;
+	/* 	transform-origin:bottom; */
+		left:22%;
+		top:100%;
+	}
+	
+	@keyframes move {
+		0%{transform:rotate(0deg);top:100%;left:22%}
+		60%{transform:rotate(0deg);top:30%;left:22%}
+		78%{transform:rotate(-360deg);top:20%;left:22%}	
+		80%{transform:rotate(-360deg);top:10%;left:22%}
+		85%{transform:rotate(-360deg);}	
+		92%{transform:rotate(410deg);}
+		100%{transform:rotate(410deg);top:5%;right:110%}
+	}
+
 }
 
 
 #mainText{
 	margin-top: 30vh;
+	color: whitesmoke;
 }
 
 #intro{
 	margin-top: 50px;
 }
 
-#work{
-	background-color: rgb(61,61,61);
-}
+// #work{
+// 	background-color: rgb(61,61,61);
+// }
 
 #p1{
 	height: 350px;
