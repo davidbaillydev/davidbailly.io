@@ -568,16 +568,7 @@ xloading-bar
     animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
   #contact {
-    overflow: hidden;
     padding-bottom: 200px;
-  }
-  .section-header {
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 50px;
-    margin-bottom: 50px;
-    letter-spacing: 6px;
-    margin-bottom: 25px;
   }
   .contact-wrapper {
     margin: 0 auto;
