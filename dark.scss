@@ -557,16 +557,16 @@ xloading-bar
 	padding-bottom: 200px;
   }
   
-//   .section-header {
-// 	text-align: center;
-// 	margin: 0 auto;
-// 	padding-top: 50px;
-// 	margin-bottom: 50px;
+  .section-header {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 50px;
+	margin-bottom: 50px;
 	
-// 	letter-spacing: 6px;
+	letter-spacing: 6px;
   
-// 	margin-bottom: 25px;
-//   }
+	margin-bottom: 25px;
+  }
   
   .contact-wrapper {
 	margin: 0 auto;
@@ -577,7 +577,7 @@ xloading-bar
   
   /* Begin Left Contact Page */
   .form-horizontal {
-	float: left;
+	float: right;
 	max-width: 400px;
 	font-family: 'Lato';
 	font-weight: 400;
@@ -612,8 +612,8 @@ xloading-bar
   
   /* Begin Right Contact Page */
   .direct-contact-container {
-	max-width: 400px;
-	float: right;
+	max-width: 600px;
+	float: left;
 	margin-top: 5px;
   }
   
