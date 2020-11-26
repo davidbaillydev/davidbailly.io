@@ -17,7 +17,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   body.dark .btn {
-    background-color: #EE6F73;
+    background-color: #26A69A;
   }
   body.dark .divider {
     opacity: 0.2;
@@ -52,6 +52,37 @@
   body.dark .collection .collection-item {
     background-color: rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  body #sorting-row {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1630px) and (max-width: 992px) {
+  body #sorting-row {
+    padding-top: 46px;
+  }
+}
+
+@media (max-width: 1630px) {
+  body .lazyload {
+    opacity: 0;
+  }
+  body .lazyloading {
+    opacity: 1;
+    -webkit-transition: 600ms opacity;
+    transition: 600ms opacity;
+    background: #f7f7f7 url(https://afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
+    min-height: 60px;
+  }
+  body #Container .mix {
+    display: none;
+  }
+  body .project-cards-container {
+    -webkit-backface-visibility: hidden;
+  }
+  body .project-cards-container .mix {
+    display: inline-block;
   }
   body .page-footer {
     left: 0;

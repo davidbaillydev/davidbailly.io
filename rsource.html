@@ -16,6 +16,108 @@
 
     </head>
 <body>
+ <!-- Navbar -->
+
+ <nav>
+                
+    <div class="navbar-wrapper">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="row">
+            <div class="col s1 center ">
+                <a href="./index.html"  class="brand-logo"> David Bailly</a>
+       
+            </div>
+        <div class="container">   
+            <div class="nav-wrapper"> 
+                    <div class="col s11 center ">
+                        <ul class="right hide-on-med-and-down" id="navList">
+                            <li><a href="./index.html"><i class="material-icons">home</i></a></li>
+                            <li><a href="#intro">About Me</a></li>
+                            <li><a href="#work">Projects</a></li>
+                            <li><a href="rsource.html">Ressources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="image/head.png">
+      </div>
+      <a href="#user"><img class="circle" src="image/dav.png"></a>
+      <a href="#name"><span class="white-text name">David Bailly</span></a>
+      <a href="#email"><span class="white-text email">david.bailly8@gmail.com</span></a>
+    </div></li>
+    <li><a href="./index.html"><i class="material-icons">home</i></a></li>
+                            <li><a href="#intro">About Me</a></li>
+                            <li><a href="#work">Projects</a></li>
+                            <li><a href="rsource.html">Ressources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Light/Dark | Mode</a></li>
+  </ul>
+
+
+    <div class="container">
+        <br>
+        <h2>Ressources : boîte à outils, Certification ...</h2>
+        <div class="row">
+            
+            <br>
+                    <div class="col m6">
+
+                        <H3> Ma boite à outils digitale</H3>
+
+                        <p>Je vous présente ici mes outils!
+                            Ce sont des outils que j’utilise au quotidien (ou presque) dans le cadre de mes activités. 
+                            Certains sont gratuits, c’est l’un des gros avantages du web qui recèle d’outils géniaux et pratiques. 
+                            Certains sont bien entendu payants. J’essaye de présenter certains outils en détail. Je mets à jour cette liste à chaque découverte et test.</p>
+                            <a  href ="boite.html"   class="waves-effect waves-light btn">Découvrir la boite à outils</a>
+                    </div>
+
+                        <div class ="col s12 m6 push-m1">
+                            <img src="image/outils.png" alt="" width="500" >
+                        </div>
+        </div>   
+
+        <br>
+        <br>
+        <br>
+        <br>
+                        
+                            <div class="row">
+                                
+                                
+                                <div class="col s12 m6 pull-m2">
+                                    <img src="image/dev.png" alt="" width="500" >
+                                    
+                                    
+                                </div>
+                                <div class ="col m6 ">
+                                    
+                                    <H3> Mes Certification developpeur</H3>
+                    
+                                    <p>Je mets à jour régulierement mes compétences dans l'apprentissage de nouvelle technologie.
+                                        Pour cela je me sert de divers resssources et formation en ligne pour apprendre en continue et gagner en productivité
+                                        dans un domaines qui evolue expodentielemennt  </p>
+                                        <a  href ="certification.html"   class="waves-effect waves-light btn">Découvrir mes certification</a>
+                                         
+                                </div>
+                                
+                            </div>
+
+
+
+
+    </div>
     
 <!--     
     <style>
@@ -27,7 +129,7 @@
         a:hover { color: #333; text-decoration: none; }
       </style>
        -->
-       <div class="container">
+       <!-- <div class="container">
         <article>
             <h1>We&rsquo;ll be back soon!</h1>
             <div>
@@ -38,7 +140,14 @@
         </article>
 
        </div>
-      
+       -->
+
+
+
+
+
+
+
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <!-- Compiled and minified JavaScript -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
